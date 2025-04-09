@@ -10,138 +10,161 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f6fff8;
+      background-color: #ffffff;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #2f8f46;
+      background: linear-gradient(to right, #2e7d32, #66bb6a);
       color: white;
-      padding: 30px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-    header img {
-      max-width: 140px;
-      margin-bottom: 15px;
-    }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 10px;
     }
     header p {
       font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background: white;
+      color: #2e7d32;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #f1f8e9;
+    }
+    nav {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
     }
     section {
       padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
     }
-    h2 {
-      color: #2f8f46;
-      font-size: 1.8rem;
+    section h2 {
+      color: #2e7d32;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
-    .highlight {
-      color: #28a745;
-      font-weight: bold;
+    .features, .about, .gallery, .contact, .footer {
+      text-align: center;
     }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      padding: 10px 0;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .socials a {
       display: inline-block;
       margin: 10px;
       text-decoration: none;
       color: white;
-      background: #28a745;
+      background: #2e7d32;
       padding: 12px 20px;
-      border-radius: 8px;
-      transition: background 0.3s;
+      border-radius: 30px;
     }
-    .socials a:hover {
-      background: #1e7034;
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 40px;
-    }
-    .gallery img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .contact button {
+      background: #2e7d32;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
     }
     footer {
-      text-align: center;
+      background: #f1f8e9;
       padding: 20px;
-      background: #e3f6e5;
-      color: #333;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="images/logo.jpeg" alt="MAHWI TECH Logo">
     <h1>MAHWI TECH Ltd</h1>
     <p>Empowering Agriculture with ICT</p>
+    <a href="#contact" class="cta-button">Join the Movement</a>
   </header>
 
-  <section>
-    <h2>About MAHWI TECH</h2>
-    <p><span class="highlight">MAHWI TECH Ltd</span> is a Rwandan-based digital innovation company transforming agriculture through powerful ICT solutions. Since 2011, we've worked with thousands of farmers and cooperatives to boost productivity and sustainability using the M-Lima digital platform.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>MAHWI TECH Ltd is a Rwandan-based digital innovation company transforming agriculture through powerful ICT tools. Since 2011, we've helped 21,000+ farmers across 15 districts increase productivity, income, and sustainability through our flagship platform: M-Lima.</p>
   </section>
 
-  <section>
-    <h2>Farmer-Centric Solutions</h2>
+  <section id="services" class="features">
+    <h2>What We Offer</h2>
     <ul>
-      <li>📱 Mobile & Web-based apps for farmers and cooperatives</li>
-      <li>📊 Real-time market info and digital transactions</li>
-      <li>🤝 Linkage to financial institutions and buyers</li>
-      <li>🌾 Extension services for improved farming techniques</li>
+      <li>📱 Mobile & Web-Based Farm Management Tools</li>
+      <li>📊 Real-Time Market Access & Digital Trade</li>
+      <li>🤝 Financing Connections for Smallholder Farmers</li>
+      <li>🌾 Extension & Training Services for Better Yields</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Join as a Cooperative</h2>
-    <p>Over <span class="highlight">21,000 farmers</span> from 60+ cooperatives across 15 districts already use the M-Lima Platform. Contact us today to connect your members with digital tools that increase productivity and income.</p>
-  </section>
-
-  <section>
-    <h2>Awards & Partners</h2>
-    <ul>
-      <li>🏅 USAID, CNFA, MINAGRI, AfDB</li>
-      <li>🏆 Howard Buffett Foundation, World Food Prize</li>
-      <li>🌍 ICT4Ag Recognition – Kenya & USA</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Vision & Mission</h2>
-    <p><strong>Mission:</strong> Equip rural farmers and agri-SMEs with transformative ICT tools.</p>
-    <p><strong>Vision:</strong> Lead Africa’s digital agriculture revolution through inclusive innovation.</p>
-  </section>
-
-  <section>
-    <h2>Contact & Follow Us</h2>
-    <p>Email: <a href="mailto:mahwitech@gmail.com">mahwitech@gmail.com</a> | Tel: (+250) 783422645 / 786229089</p>
-    <p>Visit: <a href="https://www.mahwitech.rw" target="_blank">www.mahwitech.rw</a> | Platform: <a href="https://www.mlima.rw" target="_blank">www.mlima.rw</a></p>
-    <div class="socials">
-      <a href="https://www.facebook.com/mahwitech" target="_blank">Facebook</a>
-      <a href="https://youtu.be/fIUIRBiRfrQ" target="_blank">YouTube</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
-    </div>
-  </section>
-
-  <section class="gallery">
-    <img src="images/banner1.jpeg" alt="Farmers Workshop">
+  <section id="gallery" class="gallery">
+    <h2>Our Impact in Photos</h2>
+    <img src="images/banner1.jpeg" alt="Farmer Training">
     <img src="images/banner2.jpeg" alt="Digital Agriculture Event">
   </section>
 
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:mahwitech@gmail.com">mahwitech@gmail.com</a></p>
+    <p>Phone: (+250) 783422645 / 786229089</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/mahwitech" target="_blank">Facebook</a>
+      <a href="https://youtu.be/fIUIRBiRfrQ" target="_blank">YouTube</a>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 MAHWI TECH Ltd – ICT for Agriculture. All rights reserved.</p>
+    <p>&copy; 2025 MAHWI TECH Ltd. All rights reserved. | Designed with 💚 for Agriculture</p>
   </footer>
 </body>
 </html>
