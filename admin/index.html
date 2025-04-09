@@ -1,11 +1,109 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Mahwi Tech CMS</title>
-  </head>
-  <body>
-    <div id="nc-root"></div>
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  </body>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MAHWI TECH | Empowering Agriculture with ICT</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+  body {
+    background-color: white;
+    color: #2c3e50;
+  }
+  nav {
+    background-color: #007bff; /* blue */
+  }
+  nav a {
+    color: white;
+    font-weight: bold;
+  }
+  .cta-button {
+    background-color: #28a745; /* green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .features {
+    background-color: #fdf6e3; /* light orange */
+    padding: 40px 20px;
+  }
+  footer {
+    background-color: #ff7f0e; /* orange */
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+  }
+</style>
+</head>
+<body>
+<header style="background-color: white; text-align: center;">
+<div style="background-color: white; padding: 30px 10px; text-align: center;">
+<img alt="MAHWI TECH Logo" src="logo.jpeg" style="max-width: 350px; height: auto; display: block; margin: 0 auto;"/>
+<p style="font-size: 1.1em; color: #333; margin-top: 8px;">Transforming African Agriculture — One Farmer at a Time</p>
+<a class="cta-button" href="#contact" style="margin-top: 12px; display: inline-block;">Join the Platform</a>
+</div>
+</header>
+<nav>
+<a href="#about">About</a>
+<a href="#product">Product</a>
+<a href="#stats">Impact</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+<section class="about" id="about">
+<h2>About Us</h2>
+<p>MAHWI TECH Ltd is a Rwandan-based digital innovation company transforming agriculture through powerful ICT tools. Since 2011, we've helped 21,000+ farmers across 15 districts increase productivity, income, and sustainability through our flagship platform: M-Lima.</p>
+</section>
+<section class="features" id="product">
+<h2>Our Product</h2>
+<ul>
+<li>📱 Mobile &amp; Web-Based Farm Management Tools</li>
+<li>📊 Real-Time Market Access &amp; Digital Trade</li>
+<li>🤝 Financing Connections for Smallholder Farmers</li>
+<li>🌾 Extension &amp; Training Services for Better Yields</li>
+</ul>
+</section>
+<section class="features" id="stats">
+<h2>Our Impact in Numbers</h2>
+<ul>
+<ul>
+<li>📍 Active in 15 Districts</li>
+<li>👩🏽‍🌾 Supporting 21,000+ Farmers</li>
+<li>🔗 60+ Cooperatives</li>
+<li>💼 5 Major Commodity Buyers</li>
+</ul>
+</ul>
+</section>
+<section class="features" id="reviews">
+<h2>Customer Reviews</h2>
+<ul>
+<li>“Thanks to M-Lima, I sold my maize at the best price ever!” — Jean, Bugesera</li>
+<li>“Now we manage our entire coop digitally. It's a game-changer.” — Aline, Kayonza</li>
+<li>“The training helped me increase yield and income.” — Eric, Nyamagabe</li>
+</ul>
+</section>
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<form>
+<input name="name" placeholder="Your Name" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<textarea name="message" placeholder="Your Message" required="" rows="5"></textarea>
+<button type="submit">Send Message</button>
+</form>
+<p>Email: <a href="mailto:mahwitech@gmail.com">mahwitech@gmail.com</a></p>
+<p>Phone: (+250) 783422645 / 786229089</p>
+<div class="socials">
+<a href="https://www.facebook.com/mahwitech" target="_blank">Facebook</a>
+<a href="https://youtu.be/fIUIRBiRfrQ" target="_blank">YouTube</a>
+<a href="https://wa.me/250783422645" target="_blank">WhatsApp</a>
+</div>
+</section>
+<footer>
+<p>© 2025 MAHWI TECH Ltd. All rights reserved. | Designed with 💚 for Agriculture</p>
+</footer>
+<!-- CMS script -->
+<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+</body>
 </html>
