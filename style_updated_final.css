@@ -12,14 +12,14 @@ header h1 {
 }
 .cta-button {
   background: white;
-  color: #2e7d32;
+  color: #28a745;
   padding: 12px 24px;
   text-decoration: none;
   font-weight: bold;
   border-radius: 30px;
 }
 nav {
-  background: #2e7d32;
+  background: #28a745;
   color: white;
   text-align: center;
   padding: 10px;
@@ -36,7 +36,7 @@ section {
   margin: auto;
 }
 section h2 {
-  color: #2e7d32;
+  color: #28a745;
   font-size: 2rem;
 }
 .features, .about, .gallery, .contact, .footer {
@@ -54,7 +54,7 @@ section h2 {
   margin: 10px;
   text-decoration: none;
   color: white;
-  background: #2e7d32;
+  background: #28a745;
   padding: 12px 20px;
   border-radius: 30px;
 }
@@ -66,14 +66,14 @@ section h2 {
   border-radius: 6px;
 }
 .contact button {
-  background: #2e7d32;
+  background: #28a745;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
 }
 footer {
-  background: #f1f8e9;
+  background: #ff7f0e;
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
