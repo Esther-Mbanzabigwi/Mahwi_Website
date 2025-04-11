@@ -13,10 +13,15 @@
     }
     nav {
       background-color: #007bff; /* blue */
+      text-align: center;
     }
     nav a {
       color: white;
       font-weight: bold;
+      margin: 0 12px;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 5px;
     }
     .cta-button {
       background-color: #28a745; /* green */
@@ -38,8 +43,6 @@
     header.full-header {
       width: 100%;
       height: 100vh;
-      background: url('images/logo.jpeg') center center no-repeat;
-      background-size: contain;
       background-color: white;
       display: flex;
       flex-direction: column;
@@ -47,11 +50,18 @@
       align-items: center;
       text-align: center;
     }
+    header.full-header img {
+      width: 90%;
+      max-width: 1000px;
+      height: auto;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
 <header class="full-header">
-  <p style="font-size: 1.2em; color: #333; margin-top: 20px;">Transforming African Agriculture — One Farmer at a Time</p>
+  <img src="images/logo.jpeg" alt="MAHWI TECH Logo" />
+  <p style="font-size: 1.2em; color: #333;">Transforming African Agriculture — One Farmer at a Time</p>
   <a class="cta-button" href="#contact" style="margin-top: 16px;">Join the Movement</a>
 </header>
 <nav>
