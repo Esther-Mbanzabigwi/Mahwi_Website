@@ -6,6 +6,9 @@
   <title>MAHWI TECH | Empowering Agriculture with ICT</title>
   <link href="style.css" rel="stylesheet"/>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       background-color: white;
       color: #2c3e50;
@@ -56,11 +59,23 @@
       height: auto;
       margin-bottom: 20px;
     }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
 <header class="full-header">
-  <img src="images/logo.jpeg" alt="MAHWI TECH Logo" />
+  <img src="logo.jpeg" alt="MAHWI TECH Logo" />
   <p style="font-size: 1.2em; color: #333;">Transforming African Agriculture — One Farmer at a Time</p>
   <a class="cta-button" href="#contact" style="margin-top: 16px;">Join the Movement</a>
 </header>
@@ -82,14 +97,14 @@
 </section>
 <section class="features" id="product">
   <h2>Our Product</h2>
-  <img src="images/banner2.jpeg" alt="M-Lima Logo" style="max-width: 200px; display: block; margin: 0 auto 20px;"/>
+  <img src="banner2.jpeg" alt="M-Lima Logo" style="max-width: 200px; display: block; margin: 0 auto 20px;"/>
   <ul>
     <li>📱 Mobile & Web-Based Farm Management Tools</li>
     <li>📊 Real-Time Market Access & Digital Trade</li>
     <li>🤝 Financing Connections for Smallholder Farmers</li>
     <li>🌾 Extension & Training Services for Better Yields</li>
   </ul>
-  <img src="images/logo.jpeg" alt="Mlima Logo" style="max-width: 120px; margin-top: 20px; display: block; margin-left: auto; margin-right: auto;"/>
+  <img src="logo.jpeg" alt="Mlima Logo" style="max-width: 120px; margin-top: 20px; display: block; margin-left: auto; margin-right: auto;"/>
 </section>
 <section class="features" id="impact">
   <h2>Our Impact</h2>
@@ -102,7 +117,10 @@
 </section>
 <section class="features" id="gallery">
   <h2>Gallery</h2>
-  <p>Slideshow of our work will go here (images to be added)...</p>
+  <div class="gallery-grid">
+    <img src="banner1.jpeg" alt="Gallery Image 1" />
+    <img src="banner2.jpeg" alt="Gallery Image 2" />
+  </div>
 </section>
 <section class="features" id="newsletter">
   <h2>Newsletters & Updates</h2>
@@ -110,7 +128,19 @@
 </section>
 <section class="features" id="partners">
   <h2>Our Partners</h2>
-  <p>Logos of our supporting organizations will be added here.</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <img src="partner_minagri.png" alt="MINAGRI" style="height: 60px;" />
+    <img src="partner_myict.png" alt="MYICT" style="height: 60px;" />
+    <img src="partner_agriprofocus.png" alt="AGRIPROFOCUS" style="height: 60px;" />
+    <img src="partner_usaid.png" alt="USAID" style="height: 60px;" />
+    <img src="partner_afdb.png" alt="AFDB" style="height: 60px;" />
+    <img src="partner_cnfa.png" alt="CNFA" style="height: 60px;" />
+    <img src="partner_ryaf.png" alt="RYAF" style="height: 60px;" />
+    <img src="partner_aain.png" alt="AAIN" style="height: 60px;" />
+    <img src="partner_agi.png" alt="AGI" style="height: 60px;" />
+    <img src="partner_mit.png" alt="MIT" style="height: 60px;" />
+  </div>
+  <p style="margin-top: 20px;">We are grateful to our partners and collaborators for walking alongside us to transform agriculture through ICT.</p>
 </section>
 <section class="features" id="reviews">
   <h2>Customer Reviews</h2>
